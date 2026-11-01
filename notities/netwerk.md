@@ -21,6 +21,10 @@ nslookup bit-academy.nl
 ```
 
 Wat ik zag:
+- Resolver: 168.63.129.16, de DNS-server van Azure zelf (poort 53)
+- Antwoord: bit-academy.nl → 75.2.60.5 (A-record, IPv4)
+- Non-authoritative, want Niet uit de eerste hand. De Azure-DNS-server is niet de "baas" van bit-academy.nl. Hij heeft het antwoord opgevraagd bij de echte DNS-server van Bit Academy (de authoritative server, die bepaald wordt door het NS-record) (of het lag  nog in de cache)
+- Hosting zie je niet aan het IP; daarvoor gebruik je een reverse lookup of whois
 
 ```bash
 dig bit-academy.nl A +short
