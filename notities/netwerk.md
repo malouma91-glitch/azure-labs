@@ -31,7 +31,7 @@ dig bit-academy.nl A +short
 ```
 
 Wat ik zag:
-
+-...
 ## 2. CNAME-keten
 
 ```bash
