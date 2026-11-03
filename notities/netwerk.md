@@ -31,7 +31,10 @@ dig bit-academy.nl A +short
 ```
 
 Wat ik zag:
--...
+- Antwoord: 75.2.60.5 (A-record, IPv4)
+- Zelfde IP als bij nslookup, dus het klopt
+- +short laat alleen het antwoord zien, handig voor scripts
+
 ## 2. CNAME-keten
 
 ```bash
